@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Quiz</title>
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<!-- Our header contains a navbar with our highscore link & game timer -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="viewHighScores"><span>Highscores</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav float-right">
+      <li class="nav-item" id="timer"></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- The welcome-area class greets our user and allows them to start the quiz -->
+<section class="welcome-area">
+  <div class="container">
+    <div id="get-started">
+      <h1>Nightmare Before Christmas Quiz</h1>
+      <div>
+        <img src="./assets/Cover.jpg" alt="Nightmare Cover Art" class="responsive">
+      </div>
+      <p class="lead">
+        Get ready to flex your <span>Nightmare Before Christmas</span> knowledge! <br />
+        Select the correct answer for each question about <br>
+        my favorite movie to rack up as many points as possible <br>
+        before the timer runs out.
+      </p>
+      <button class="customBtn" id="startBtn">Start Quiz!</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- The main-question-area class is where we will populate our questions -->
+<section class="main-question-area">
+  <div class="container">
+    <div id="question"></div>
+
+    <ul id="question-list"></ul>
+
+    <div id="question-result"></div>
+  </div>
+</section>
+
+<!-- Import our fontawesome JavaScript -->
+<script src="https://kit.fontawesome.com/8a95b1eafc.js" crossorigin="anonymous"></script>
+<!-- Import our custom JavaScript code.-->
+<script src="script.js"></script>
+</body>
+
+</html>
